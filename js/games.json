@@ -1,0 +1,13 @@
+ [
+     {
+         "categoria" : " Fuentes de Pc",
+         "pregunta" : "que conecto con esteconector ?",
+         "respuesta" : "conexiona al disco duro",
+         "incorrecta1" : "la fuente",
+         "incorrecta2" : "El floppy",
+         "incorrecta3" : "La grafica",
+         "incorrecta4" : "Aux al micro",
+         "imagen": "./images/preguntas/sata.png",
+         "objet-fit": "cover"
+     }
+ ]

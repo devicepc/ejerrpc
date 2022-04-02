@@ -1,0 +1,23 @@
+.Quizfalla1{
+    float:left; border: 1px solid white; margin-right:.5em;
+}
+
+.btnquiz{
+    background: red;
+    color: white;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+.btnquiz:hover {
+    background-color: #c92a2a; 
+    
+  }
+  .tdquizz1{
+      border: 1px solid #000;
+      text-align: center;
+      border-radius: 10px;
+      margin: 0 5px 0 5px;
+      
+  }

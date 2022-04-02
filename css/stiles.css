@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Open+Sans&display=swap');
+@import url(info.css);
+*{
+    transition: all 0.5s;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    background: #4e94ab;
+}
+
+/* estilo de menu */
+
+#btn-menu{
+    display: none;
+}
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px, solid #fff;
+}
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+    
+}
+.menu li {
+    border-right: 1px, solid #FFF;
+}
+.menu li:hover{
+    background: rgba(0, 0,0, 0.3);
+}
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+
+}
+.h3titu{
+    text-align: center;
+    color: gray;
+}
+.imgdeWeb{
+    width: 150px;
+    height: 150px;
+}
+/* juego de trivia con fotos*/
+#frame001 {
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid black;
+    height: 600px;
+    width: 70%;
+}
+
+.buttons001 {
+    background-color: dodgerblue;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.buttons002 {
+    background-color: blue;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+#message001 img {
+    height: 200px;
+    width: 250px;
+    border: #011c39 2px solid;
+}
+
+#font001 {
+    text-align: center;
+    font-size: large;
+    color: black;   
+}
+.hrjuego{
+    color: #6a6a6a;
+    height: 2px;
+    background-color:gray;
+    margin-top: 60px;
+}
+/* juego trivia */
+.divquizfte{
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+
+.res{
+    display: inline-flex;
+    margin: 0px;
+    width: 70%;
+}
+.pr{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+
+}
+.btnquizfte{
+    background: red;
+    color: #FFF;
+    width: auto;
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 30px;
+    border-radius: 40px;
+}
+
+
+/*fin de juego trivia*/
+
+
+
+
+/* fin de juego de trivia con fotos*/
+/* estilo de menu  responsive*/
+@media (max-width:768px){
+    header label {
+        display: block;
+
+    }
+    .menu {
+        position: absolute;
+        background: #4e4e4e;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-top: 1px solid #fff;
+    }
+#btn-menu:checked ~ .menu{
+    margin: 0;
+}
+}
+
+/* estilos del main */
+main{
+    padding: 20px;
+}
+#Pregcorr, #PregFte, #Preg80Plus, #PregConexFte, #PregFallasFte, #PregDifFte{
+    display: none;
+}
+
+#PregTiposPM, #PregPartesPM, #PregDifPM, #PregConectPM, #PregFallasPM{
+display: none;
+}
+#PregTiposMem, #PregPartesMem, #PregDifMem,  #PregFallasMem{
+    display: none;
+    }
+
+#PregTiposPorc, #PregPartesProc, #PregDifProc,  #PregFallasProc{
+        display: none;
+        }
+#PregTiposTVid, #PregPartesTVid, #PregDifTVid,  #PregFallasTVid{
+            display: none;
+            }
+#PregTiposTdeS, #PregPartesTdeS, #PregDifTdeS,  #PregFallasTdeS{
+                display: none;
+                }
+
+#PregFallasDisc, #PregTiposDisc, #PregPartesDisc, #PregDifDisc{
+    display: none;
+}
+#PregConexFte{
+    width: 100%;
+}
+.div1{
+    display: inline-block;
+}
+.divfuente{
+    display: block;
+    width: 100%;
+}
+.h1 {
+    text-align: center;
+    font-size: '40px';
+    color: #6a6a6a;
+    margin-top: 50px;
+}
+#h1 {
+    text-align: center;
+    font-size: '40px';
+    color: #6a6a6a;
+    margin-top: 50px;
+}
+.tituloTema{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+/* estilo boton arriba */
+#ir-arriba{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/* estilo cards */
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+
+}
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container .card img{
+    height: 220px;
+    height: 330px;
+}
+.container .card h4{
+    font-weight: 600;
+}
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+.fotoejerc{
+    width: 100px;
+    height: 100px;
+}
+
+/* estilo de footer */
+footer{
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display:-o-flex;
+display:flex;
+flex-flow: row wrap;
+padding:50px;
+color:#fff;
+background-color: #011c39;
+margin-top: 200px;
+}
+
+.footer > *{ 
+flex: 1 100%;
+}
+.footer-left{
+margin-right: 1.25em;
+margin-bottom: 2em;
+}
+.footer-left img{
+width:25%;
+
+}
+h2 {
+ font-weight:600;
+font-size: 17px;
+
+} 
+.footer ul{
+list-style: none;
+padding-left: 0;
+
+}
+
+.footer li{
+line-height:2em;
+
+}
+.footer a{
+text-decoration: none;
+
+}
+.footer-right{
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display:-o-flex;
+display:flex;
+flex-flow: row wrap;
+
+} 
+.footer-right >{
+flex: 1 50%;
+margin-right:1.25em;
+}
+.box a {
+color: #999;
+}
+.footer-bottom{
+text-align: center;
+color: #999;
+padding-top:50px;
+}
+.footer-left p{
+padding-right:20%;
+color:#999;
+}
+.social a{
+background: #364a62;
+width:40px;
+height:40px;
+display: inline-block;
+margin-right:10px;
+}
+.social a i{
+color: #e7f2f4;
+padding:10px 12px;
+font-size:20px;
+}
+.features{
+padding-right:20%;
+color:#999;
+}
+
+.footer-bottom p{
+text-align: center;
+color:red;
+}
+
+@media screen and (min-width:600px){
+.footer-right >*{
+flex:1;
+}
+.footer-left{
+	flex: 1 0px;
+}
+.footer-right{
+	flex: 2 0px;
+}
+
+}
+
+/* estilos de renglones */
+.renglon1{
+    padding: 20px;
+    text-align: center;
+    color: red;
+    background: rgb(190,190,190);
+    min-width :100%;
+	
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+    height: 55px;
+}
+
+.renglon2{
+    padding: 20px;
+    text-align: center;
+    color: red;
+    background: #A9A9A9;
+    min-width :100%;
+	
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+    height: 55px;
+}
+
+hr{
+    color: red;
+    min-width: 100%;
+}
+
+/* estilos de los botones faq  */
+.btnfaq{
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 28px;
+  text-transform: uppercase;
+  display: inline;
+  
+}
+.btnfaq:hover {
+    background: #2079b0;
+    background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+    text-decoration: none;
+  }
+
+  .QuizPregFte{
+      border: solid 1px green;
+      height: 100px;
+      width: 100px;
+  }
+
+  .rengfaq{
+      display: inline;
+  }
+
+  /* estilos de boton */
+  form{
+      width: 450px;
+      height: auto;
+      background: rgba(0,0,0,0.4);
+      padding: 10px 20px;
+      box-sizing: 20px;
+      margin-top: 20px;
+      border-radius: 7px;
+  }
+  .h2form{
+      color:#fff;
+      text-align: center;
+      margin: 0;
+      font-size: 40px;
+      margin-bottom: 20px;
+  }
+  input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+  textarea{
+      min-height: 100px;
+      max-height: 200px;
+      max-width: 100%;
+  }
+  #btnenviar{
+      color: #fff;
+      background: #31384a;
+      padding: 20px;
+  }
+  #btnenviar:hover{
+      cursor: pointer;
+  }
+
+
+  @media(max-width:480px){
+      form{
+          width: 100%;
+      }
+  }
+  /* estilo de ref a pag web */
+  a{
+    outline: none;
+    text-decoration: none;
+    color: black;
+    
+  }
+  /* estilo de section  */
+  #section{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+      }
+  
+  /*  estilos de enla  del index */
+  #enla{
+    color: red;
+    font-size: 20px;
+    padding: 35px 32px;
+    text-decoration: none;
+    border-radius: 25%;
+}
+#demo{
+    color: blueviolet;
+    margin-top: 100px;
+}
+
+/* sepaador de temas */
+#separatemas{
+    color: #6a6a6a;
+    height: 2px;
+    background-color:gray
+}
+#separatemasw{
+    color: #FFF;
+    height: 1px;
+   
+}
+.container.div1{
+    display: inline-block;
+    margin-right: 70%;
+}
+.container h1{
+    text-align: center;
+    font-size: '40px';
+    color: #6a6a6a;
+    margin-top: 50px;
+}
+/* h3 titlulo*/
+.h3Titulo{
+    text-align: center;
+}
