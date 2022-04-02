@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>True or False Quiz</title>
+    <link rel="stylesheet" href="css/stiles.css">
+</head>
+<body>
+    <style>
+        #frame001 {
+            border-radius: 5px;
+            background-color: white;
+            border: 2px solid black;
+            height: 350px;
+            width: 400px;
+        }
+
+        .buttons001 {
+            background-color: dodgerblue;
+            color: white;
+            width: 70px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .buttons002 {
+            background-color: blue;
+            color: white;
+            width: auto;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        #font001 {
+            text-align: center;
+            font-size: large;
+            color: black;
+        }
+    </style>
+    <div id="frame001">
+        <div id="font001">
+            <h2>True Or False Quiz</h2><text>Question: <text id="number001">0</text></text><br />
+            <text>Score: <text id="score001">0</text></text>
+            <hr />
+            <div id="disappear001">
+                <button class="buttons002" onclick="begin001()">Begin</button>
+            </div>
+            <p id="message001"></p>
+            <p id="message002"></p>
+            <p id="message003"></p>
+            <p id="message004"></p>
+        </div>
+    </div>
+    <script>
+        var question001 = ["<img src=images/preguntas/atx-20.jpg height=40 /><br /><br />que conecta esto?",
+            "<img src=images/preguntas/atx-20.jpg height=40 /><br /><br />What is the answer to the image above?",
+            "<img src=images/preguntas/atx-20.jpg height=40 /><br /><br />What is the answer to the image above?",
+            "<img src=images/preguntas/atx-20.jpg height=40 /><br /><br />What is the answer to the image above?",
+            "<img src=images/preguntas/atx-20.jpg height=40 /><br /><br />What is the answer to the image above?",
+            "<img src=images/preguntas/atx-20.jpg height=40 /><br /><br />What is the answer to the image above?",
+            "<img src=images/preguntas/atx-20.jpg height=40 /><br /><br />What is the answer to the image above?",
+            "<img src=images/preguntas/atx-20.jpg height=40 /><br /><br />What is the answer to the image above?",
+            "<img src=images/preguntas/atx-20.jpg height=40 /><br /><br />What is the answer to the image above?",
+            "<img src=images/preguntas/atx-20.jpg height=40 /><br /><br />What is the answer to the image above?"
+        ];
+
+        var options001 = ["<button class=buttons001 onclick=q1i()>Micro</button><br /><br /><button class=buttons001 onclick=q1c()>Placa</button>"];
+        var options002 = ["<button class=buttons001 onclick=q1c()>3</button><br /><br /><button class=buttons001 onclick=q1i()>4</button>"];
+        var options003 = ["<button class=buttons001 onclick=q1c()>5</button><br /><br /><button class=buttons001 onclick=q1i()>6</button>"];
+        var options004 = ["<button class=buttons001 onclick=q1i()>1</button><br /><br /><button class=buttons001 onclick=q1c()>2</button>"];
+        var options005 = ["<button class=buttons001 onclick=q1c()>3</button><br /><br /><button class=buttons001 onclick=q1i()>4</button>"];
+        var options006 = ["<button class=buttons001 onclick=q1c()>5</button><br /><br /><button class=buttons001 onclick=q1i()>6</button>"];
+        var options007 = ["<button class=buttons001 onclick=q1i()>1</button><br /><br /><button class=buttons001 onclick=q1c()>2</button>"];
+        var options008 = ["<button class=buttons001 onclick=q1c()>3</button><br /><br /><button class=buttons001 onclick=q1i()>4</button>"];
+        var options009 = ["<button class=buttons001 onclick=q1c()>5</button><br /><br /><button class=buttons001 onclick=q1i()>6</button>"];
+        var options010 = ["<button class=buttons001 onclick=q1i()>1</button><br /><br /><button class=buttons001 onclick=q1c()>2</button>"];
+
+        var a = 0;
+        a++;
+        var b = 0;
+        b++;
+
+        function begin001() {
+            disappear001.innerHTML = "";
+            message001.innerHTML = question001[0];
+            message002.innerHTML = options001;
+            number001.innerHTML = a++;
+        }
+
+        function q1c() {
+            message003.innerHTML = "Correct";
+            message002.innerHTML = "";
+            score001.innerHTML = b++;
+            message004.innerHTML = "<button class=buttons002 onclick=next001()>Next</button>";
+        }
+
+        function q1i() {
+            message003.innerHTML = "Incorrect";
+            message002.innerHTML = "";
+            message004.innerHTML = "<button class=buttons002 onclick=next001()>Next</button>";
+        }
+
+        function next001() {
+            if (a == "2") {
+                message001.innerHTML = question001[1];
+                message002.innerHTML = options002;
+                message003.innerHTML = "";
+                number001.innerHTML = a++;
+                message004.innerHTML = "";
+            }
+
+            else if (a == "3") {
+                message001.innerHTML = question001[2];
+                message002.innerHTML = options003;
+                message003.innerHTML = "";
+                number001.innerHTML = a++;
+                message004.innerHTML = "";
+            }
+
+
+            else if (a == "4") {
+                message001.innerHTML = question001[3];
+                message002.innerHTML = options004;
+                message003.innerHTML = "";
+                number001.innerHTML = a++;
+                message004.innerHTML = "";
+            }
+
+            else if (a == "5") {
+                message001.innerHTML = question001[4];
+                message002.innerHTML = options005;
+                message003.innerHTML = "";
+                number001.innerHTML = a++;
+                message004.innerHTML = "";
+            }
+
+            else if (a == "6") {
+                message001.innerHTML = question001[5];
+                message002.innerHTML = options006;
+                message003.innerHTML = "";
+                number001.innerHTML = a++;
+                message004.innerHTML = "";
+            }
+
+            else if (a == "7") {
+                message001.innerHTML = question001[6];
+                message002.innerHTML = options007;
+                message003.innerHTML = "";
+                number001.innerHTML = a++;
+                message004.innerHTML = "";
+            }
+
+            else if (a == "8") {
+                message001.innerHTML = question001[7];
+                message002.innerHTML = options008;
+                message003.innerHTML = "";
+                number001.innerHTML = a++;
+                message004.innerHTML = "";
+            }
+
+            else if (a == "9") {
+                message001.innerHTML = question001[8];
+                message002.innerHTML = options009;
+                message003.innerHTML = "";
+                number001.innerHTML = a++;
+                message004.innerHTML = "";
+            }
+
+            else if (a == "10") {
+                message001.innerHTML = question001[9];
+                message002.innerHTML = options010;
+                message003.innerHTML = "";
+                number001.innerHTML = a++;
+                message004.innerHTML = "";
+            } else {
+                message001.innerHTML = "End of Quiz";
+                message002.innerHTML = "";
+                message003.innerHTML = "";
+                message004.innerHTML = "<button class=buttons002 onclick=repeat001()>Repeat</button>";
+            }
+        }
+
+        function repeat001() {
+            location.reload();
+        }
+    </script>
+</body>
+</html>

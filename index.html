@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stiles.css">
+    <title>it</title>
+</head>
+<body>
+    <header>
+   <div id="nav">
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu" ><img src="./images/menu.png" alt="icon">  </label>
+    <nav class="menu">
+        <ul id="">
+            <li><a href="index.html">Inicio </a></li>
+            <li><a href="acerca.html">Acerca de </a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./contacto.html"> Contactenos</a></li> 
+        </ul>
+    </nav>
+   
+</header>
+<div id="div1">
+    <h1 id="h1">Bienvenidos </h1> 
+    <h4>Esta web es para practicar algunos conceptos de la reparacion pc</h4>
+    
+</div>
+
+<main class="container">
+   
+    <div class="card">
+        <a href="./fisica.html">
+                    <img src="./images/reparacion.jpg">
+        <h4>Reparacion</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates porro illo explicabo maxime, similique qui!</p>
+    </a>
+
+
+    </div>
+<div class="card">
+	<a href="./redes.html">
+        <img src="./images/redes.jpg">
+        <h4>Redes</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates porro illo explicabo maxime, similique qui!</p>
+        </a>
+    </div>
+    <div class="card">
+	<a href="./portatiles.html">
+        <img src="./images/portatiles.jpg">
+        <h4>Portatiles</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates porro illo explicabo maxime, similique qui!</p>
+        </a>
+    </div>
+    <div class="card">
+	<a href="./instalacion.html">
+        <img src="./images/instalacion de so.png">
+        <h4>Instalacion So</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates porro illo explicabo maxime, similique qui!</p>
+        </a>
+    </div>
+    <div class="card">
+	<a href="./administracion.html">
+        <img src="./images/administracion.png">
+        <h4>Administracion</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates porro illo explicabo maxime, similique qui!</p>
+        </a>
+    </div>
+    <div class="card">
+        <a href="javascript:openStuff();">
+            <img src="./images/aleatn.jpg">
+            <h4>Aleatorio</h4>
+            <p>Prueba con una opcion Aleatoria</p>
+            </a>
+        </div>
+
+<div id="section">
+    
+    <br/><br/>
+</div><br/><br/>
+<p id="demo"></p>
+<div id="aside"></div>
+</main>
+
+
+<footer class="footer">
+<div class="footer-left">
+<img src="./images/logoit.png" alt="">
+<p> lorem hkskjfhdkjs hdfshfkjdhs </p>
+<div class="social">
+<a href=""><i class="fa fa-facebook">asa</i></a>
+<a href=""><i class="fa fa-twitter"></i></a>
+<a href=""><i class="fa fa-youtube">asa</i></a>
+<a href=""><i class="fa fa-linkedin"></i></a>
+</div>
+</div>
+<ul class="footer-right">
+<li>
+<h2> no se que poner aca </h2>
+<ul class="box">
+<li><a href="">hkjfshkdshfsd</a></li>
+<li><a href="">nbmcvnbvcb </a></li>
+<li><a href="">hjdfghhdfl </a></li>
+</ul>
+</li>
+<li class="box">
+<h2> Address</h2>
+<ul class="box">
+<li><a href="">uruguay</a></li>
+<li><a href="">tel. 4564465 </a></li>
+<li><a href="">Mail: gdjasgdjg@gmail.com </a></li>
+</ul>
+</li>
+
+</ul>
+<div class="footer-bottom">
+<p>All rights reserved by &copy; copco</p>
+
+
+</div>
+
+</footer>
+ <script>
+
+var direcciones = ["./administracion.html",
+    "./instalacion.html",
+    "./portatiles.html",
+    "./redes.html",
+    "./reparacion.html",
+  
+];
+openStuff = function () {
+    var randIdx = Math.random() * direcciones.length;
+    randIdx = parseInt(randIdx, 10);
+  /* para las dirreciones de internet, servidor en marcha */
+  // var link  = 'http://' + direcciones[randIdx];
+  /* para pruebas en local , hay que sacar la ruta del pen*/
+  var link  =  direcciones[randIdx];
+
+  /* va igual */
+ document.getElementById("demo").innerHTML=direcciones[randIdx];
+ window.open(link);
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta name="robots" content="noindex">
+
+	<meta charset="UTF-8">
+	<title>Trivial con Javascript | Pablo Monteserín</title>
+	        <meta name="description" content="Ejemplo un juego de preguntas tipo trivial que utiliza Javascript en el que tanto las preguntas como las respuestas se van reordenando aleatoriamente">
+
+<!-- Latest compiled and minified JS -->
+<script src="https://code.jquery.com/jquery.js"></script>
+
+
+</head>
+<body>
+<h1>Ejemplo de trivial sencillo programado con Javascript</h1>
+	<div id="pregunta"></div>
+	<div id="respuestas"></div>
+
+<input type="button" value="a ver si acerté" onclick="comprobar()">
+	<script>
+// inico de preguntas mias
+var preguntasfte = [
+   "¿ La fuente generica tiene menor alimentacion ?",
+   "¿ La fuente certificadas tiene mayor alimentacion al PC ?",
+   "¿ La fuente generica tiene mayor peso  (kg) ?",
+   "¿ La fuente generica tiene menor calidad ?",
+   "¿ La fuente Semimodular se le quiatn cables segun las nacecidades  ?",
+   "¿ La fuente generica tiene PFC (Power Factor Correction)  ?",
+   "¿ La fuente certificada es la mejor para las pc gamers  ?",
+   "¿ Si quiero hacer overclocking a un PC usaria fuente generica  ?",
+   "¿ Donde ubicaria una fuente generica ?",
+   "¿ Donde pondria una fuente real  ?",
+   "¿ La fuente Certificada es la de mayor valor  ?",
+];
+
+var respuestasfte = [
+["Si", "No", "Es lo mismo"  ],
+["Si", "No", "Dan la misma energia"  ],
+["No", "Si", "Tienen el mismo peso"  ],
+["No", "Si", "Son de igual calidad" ],
+["Se le quitan los cables", "No, los cables estan soldados", "NS/NC"  ],
+["No", "Si", "Ambas lo traen"  ],
+["Si ", "Ambas duran lo mismo", "No"  ],
+["No ", " Ambas son iguales", "Si"  ],
+["Arriba ", "Afuera", "Dentro pero en el piso del gabinete"  ],
+["Dentro pero en el piso del gabinete", "Afuera", "Dentro, pero arriba"  ],
+["Si, cuestan mas", "No", "Es lo mismo"  ],
+
+];
+
+// fin de preguntas mios
+	
+jugar();
+
+		var indicie_respuesta_correcta;
+
+function jugar(){
+			var indice_aleatorio = Math.floor(Math.random()*preguntasfte.length);
+
+
+		var respuestas_posibles = respuestasfte[indice_aleatorio];
+
+
+		var posiciones = [0,1,2];
+		var respuestas_reordenadas = [];
+
+		var ya_se_metio = false;
+		for(i in respuestas_posibles){
+			var posicion_aleatoria = Math.floor(Math.random()*posiciones.length);
+			if(posicion_aleatoria==0 && ya_se_metio == false){
+				indicie_respuesta_correcta =i;
+				ya_se_metio = true;
+			}
+			respuestas_reordenadas[i] = respuestas_posibles[posiciones[posicion_aleatoria]];
+			posiciones.splice(posicion_aleatoria, 1);
+		}
+
+		var txt_respuestas="";
+		for(i in respuestas_reordenadas){
+			txt_respuestas += '<input type="radio" name="pp" value="'+i+'"><label>'+respuestas_reordenadas[i]+'</label><br>';
+		}
+
+		document.getElementById("respuestas").innerHTML = txt_respuestas;
+		document.getElementById("pregunta").innerHTML = preguntasfte[indice_aleatorio];
+
+}
+function comprobar(){
+	var respuesta = $("input[type=radio]:checked").val();
+
+	//alert(respuesta);
+	//alert(indicie_respuesta_correcta);
+	if(respuesta ==indicie_respuesta_correcta){
+		alert("que bien!");
+	}else{
+		alert("me tiro por un puente");
+	}
+	jugar();
+}
+	</script>
+
+</body>
+</html>
