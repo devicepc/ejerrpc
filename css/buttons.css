@@ -1,4 +1,10 @@
-/* Botones de entradas de estilos utilizados en páginas de descripción de películas.*/
+.pQues{
+    
+    margin-left: 3%;
+    display: inline;
+}
+
+/* Botones de entradas de estilos utilizados en páginas .*/
 
 #button-container{
     display:inline-block;
@@ -6,7 +12,7 @@
    border: solid 1px red;
     padding: 15px;
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 2px;
     height: 300px;
     }
     
@@ -29,12 +35,41 @@
     border-radius:1.5em;
     color:white;
     text-transform:uppercase;
-    padding:1em 1.5em;
+    padding:0.7em 1.5em;
+    margin-top: 15px;
+    margin-left: 10px;
 
+    }
+
+    .tester{
+        height: 160px;
     }
 
 #Resultado1{
     color: green;
     font-size: 14px;
     font-weight: 800;
+}
+
+
+
+
+@media  screen and (max-width: 768px) {
+    #button-container{
+        width: 90%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .button-container{
+        width: 90%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    #button-containerradio{
+   
+        padding: 15px;
+        margin-bottom: 2%;
+        margin-right: 2%;
+        height: 1040px;
+        }
 }

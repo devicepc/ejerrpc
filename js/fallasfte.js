@@ -33,6 +33,9 @@ var respuestaCorrecta = new Array("a1", "b2", "c3", "d4", "f1");
 	}
 
     function check() {
-        document.getElementById("button-containerradio").style.height = "730px";
-        
+		const pageWidth  = document.documentElement.scrollWidth;
+		console.log(pageWidth);
+		if(pageWidth >= 1100){
+			document.getElementById("button-containerradio").style.height = "730px";
+	}  
     }

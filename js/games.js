@@ -1,4 +1,4 @@
-var question001 = ["<img src=images/preguntas/atx2.jpg height=40 /><br /><br />Que alimenta este conector?",
+const question001 = ["<img src=images/preguntas/atx2.jpg height=40 /><br /><br />Que alimenta este conector?",
 "<img src=images/preguntas/berg-conector.jpg height=40 /><br /><br />Este conector se conecta en ...",
 "<img src=images/preguntas/eps.jpg height=40 /><br /><br />Este conector se conecta en ...",
 "<img src=images/preguntas/molex.jpg height=40 /><br /><br />Este conector se conecta en ...",
@@ -7,17 +7,17 @@ var question001 = ["<img src=images/preguntas/atx2.jpg height=40 /><br /><br />Q
 
 ];
 
-var options001 = ["<button class=buttons001 onclick=q1i()>Microprocesador</button><br /><br /><button class=buttons001 onclick=q1c()>Placa Madre</button>"];
-var options002 = ["<button class=buttons001 onclick=q1c()>Disquetera</button><br /><br /><button class=buttons001 onclick=q1i()>Disco duro</button>"];
-var options003 = ["<button class=buttons001 onclick=q1c()>Alimentacion de procesador</button><br /><br /><button class=buttons001 onclick=q1i()>Disco duro</button>"];
-var options004 = ["<button class=buttons001 onclick=q1i()>Floppy</button><br /><br /><button class=buttons001 onclick=q1c()>Lectora / Disco </button>"];
-var options005 = ["<button class=buttons001 onclick=q1c()>Tarjeta grafica</button><br /><br /><button class=buttons001 onclick=q1i()>Procesador</button>"];
-var options006 = ["<button class=buttons001 onclick=q1c()>Tarjeta grafica</button><br /><br /><button class=buttons001 onclick=q1i()>Disco / Lectora</button>"];
+const options001 = ["<button class=buttons001 onclick=q1i()>Microprocesador</button><br /><br /><button class=buttons001 onclick=q1c()>Placa Madre</button>"];
+const options002 = ["<button class=buttons001 onclick=q1c()>Disquetera</button><br /><br /><button class=buttons001 onclick=q1i()>Disco duro</button>"];
+const options003 = ["<button class=buttons001 onclick=q1c()>Alimentacion de procesador</button><br /><br /><button class=buttons001 onclick=q1i()>Disco duro</button>"];
+const options004 = ["<button class=buttons001 onclick=q1i()>Floppy</button><br /><br /><button class=buttons001 onclick=q1c()>Lectora / Disco </button>"];
+const options005 = ["<button class=buttons001 onclick=q1c()>Tarjeta grafica</button><br /><br /><button class=buttons001 onclick=q1i()>Procesador</button>"];
+const options006 = ["<button class=buttons001 onclick=q1c()>Tarjeta grafica</button><br /><br /><button class=buttons001 onclick=q1i()>Disco / Lectora</button>"];
 
 
-var a = 0;
+let a = 0;
 a++;
-var b = 0;
+let b = 0;
 b++;
 
 function begin001() {
