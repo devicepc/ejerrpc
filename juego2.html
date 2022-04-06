@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stiles.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/fallasdefte.css">
+    <script src="js/games.js"></script>
+    <script src="https://kit.fontawesome.com/d77ac583c4.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="./css/juego2.css">  
+   </head>  
+   <body>  
+    <header>  
+        <div id="nav">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" ><img src="./images/menu.png" alt="icon">  </label>
+            <nav class="menu">
+                <ul id="">
+                    <li><a href="index.html">Inicio </a></li>
+                    <li><a href="./acerca.html">Acerca de </a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./contacto.html"> Contactenos</a></li> 
+                </ul>
+            </nav>
+                </div>
+    </header>  
+    <div id="div1">
+        <h1 id="h1">Ejercicios de Reparacion </h1> 
+        <h4></h4>
+        
+    </div>
+    
+    <main class="container">
+       
+      <div class="info-pet">
+        <img src="./images/tipodecorriente.jpg" alt="Corriente" onclick="MostrarCorr()">
+        <h4>Corriente</h4>
+      </div>
+      <div class="info-pet">
+        <img src="./images/partedefuente.png" alt="Partes de fuente" onclick="MostrarFte()">
+        <h4>Partes de fuente</h4>
+      </div>
+      <div class="info-pet">
+        <img src="./images/diferencias.png" alt=" Diferencias" onclick="MostrarDifFte()">
+        <h4>Diferencias </h4>
+      </div>
+      <div class="info-pet">
+        <img src="./images/80PLUS.webp" alt="80PLUS" onclick="Mostrar80plusFte()">
+        <h4>80 PLUS</h4>
+      </div>
+      <div class="info-pet">
+        <img src="./images/conectoresfuente.jpg" alt="Conectores" onclick="MostrarConectFte()">
+        <h4>Conectores</h4>
+      </div>
+       <div class="info-pet info-pet2">
+        <img src="./images/falladefuente.jpg" alt="Fallas" onclick="MostrarFallasFte()">
+        <h4>Fallas</h4>
+      </div> 
+    
+      <div id="Pregcorr">
+      
+      <hr id="separatemas">
+    
+      
+      <div id="div1">
+        <h1 id="h1PM">Uso de tester </h1> 
+        
+    </div>
+    <hr>
+    
+    <div class=“button-container” id="button-container">
+     <h3>Ejercicio 1</h3>
+      <img  class="tester"src="./images/tester.jpg" alt="Tester"/>
+      <p> Señale en que posicion pondria el tester para medir corriente alterna</p>
+    
+    <button class="alinks" id="button1ejer1">V ~</button>
+    <button  class="alinks" id="button2ejer1">V -</button>
+    <button class="alinks" id="button3ejer1">=>|</button>
+    
+    <p class="Resultado1" id="Resultado1"> </p>
+    </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 2</h3>
+      <img  class="tester"src="./images/tester.jpg" alt="Tester"/>
+      <p> Señale en que posicion pondria el tester para medir corriente continua</p>
+    <button class="alinks" id="button1ejer2" onclick="cambiarF2();">V ~</button>
+    <button  class="alinks" id="button2ejer2" onclick="cambiar2();">V -</button>
+    <button class="alinks" id="button3ejer2" onclick="cambiarF2();">=>|</button>
+    
+    <p class="Resultado1" id="Resultado2"> </p>
+    </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 3</h3>
+      <img class="tester" src="./images/tester.jpg" alt="Tester"/>
+      <p> Señale en que posicion pondria el tester para medir si un cable esta cortado</p>
+    <button class="alinks" id="button1eje1" onclick="cambiarF3();">V ~</button>
+    <button  class="alinks" id="button2ejer1" onclick="cambiarF3();">V -</button>
+    <button class="alinks" id="button3ejer1"onclick="cambiar3();">=>|</button>
+    
+    <p class="Resultado1" id="Resultado3"> </p>
+    </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 4</h3>
+      <img class="tester" src="./images/tester.jpg" alt="Tester"/>
+      <p> Señale en que posicion pondria el tester para medir fusible </p>
+    <button class="alinks" id="button1eje1" onclick="cambiarF4();">V ~</button>
+    <button  class="alinks" id="button2ejer1" onclick="cambiarF4();">V -</button>
+    <button class="alinks" id="button3ejer1" onclick="cambiar4();">=>|</button>
+    
+    <p class="Resultado1" id="Resultado4"> </p>
+    </div>
+     
+    
+      <hr id="separatemas">
+      
+      <div id="div1">
+      <h1 id="h1PM">Corriente </h1> 
+      
+    </div>
+    <hr>
+    
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 1</h3>
+    <img src="./images/enchufeshuko.jpg" alt="Shuko"/>
+    <p> Señale si este enchufe cuenta con tierra</p>
+    <button class="alinks" id="button1ejer1" onclick="CambiarCorr1()">NO</button>
+    <button  class="alinks" id="button2ejer1" onclick="CambiarCorr2()">SI</button>
+    
+    <p class="Resultado1" id="ResultadoCorr1"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 2</h3>
+    <img src="./images/adaptadorcorr.jpg" alt="adaptador"/>
+    <p> Es bueno poner un adaptador y quitar la tierra</p>
+    <button class="alinks" id="button1ejer2" onclick="CambiarCorr3();">Si</button>
+    <button  class="alinks" id="button2ejer2" onclick="CambiarCorr4();">No</button>
+    
+    
+    <p class="Resultado1" id="ResultadoCorr2"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 3</h3>
+    <img src="./images/tierra.png" alt="Tester"/>
+    <p> Segun lo aprendido el lugar donde coloca las PC deberia tener conexion a tierra?</p>
+    <button class="alinks" id="button1eje1" onclick="CambiarCorr4();">NO</button>
+    <button  class="alinks" id="button2ejer1" onclick="CambiarCorr3();">SI</button>
+    
+    
+    <p class="Resultado1" id="ResultadoCorr3"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+      <h3>Ejercicio 4</h3>
+      <img src="./images/cablequemado.jpg" alt="Tester" class="fotoejerc"/>
+      <p> Que debo hacer si el cable de corriente esta dañado</p>
+      <button class="alinks" id="button1eje1" onclick="CambiarCorr5();">Cambiarlo</button>
+      <button  class="alinks" id="button2ejer1" onclick="CambiarCorr6();">Dejarlo asi</button>
+      
+      
+      <p class="Resultado1" id="ResultadoCorr4"> </p>
+      </div>
+    
+    </div>
+    
+    <hr id="separatemas">
+    
+    <div id="PregFte">
+    <div class="divfuente">
+      <h1 class="tituloTema">Partes de fuente</h1> 
+    
+    </div>
+    <hr>
+    
+    <div class=“button-container” id="button-container">
+      
+    <h3> Ejercicio 1</h3>
+    <img src="./images/fuente.jpg" alt="Fuente PC" class="fotoejerc"/>
+    <p class="pQues"> Como es la combercion la fuente</p>
+    <br><br><br><br>
+    <button class="alinks" id="buttonfteejer1" >Corr Cont => Corr Alt</button>
+    <button  class="alinks" id="buttonfteejer2">Corr Alt => Corr Cont</button>
+    
+    <p class="Resultado1" id="Fte1"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 2</h3>
+    <img src="./images/fuente.jpg" alt="adaptador"/>
+    <p> ¿ Que voltaje recibe la fuente</p>
+    <button class="alinks" id="buttonfte2ejer2" >110 o 220 V</button>
+    <button  class="alinks" id="buttonfte2ejer3" >400 o 330 V</button>
+    
+    
+    <p class="Resultado1" id="Fte2"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 3</h3>
+    <img src="./images/fuente.jpg" alt="Tester"/>
+    <p> ¿ Que tipos de fuente conoce?</p>
+    <button class="alinks" id="buttonfte3ejer1" >Generica / 80 PLUS </button>
+    <button  class="alinks" id="buttonfte3ejer2" >Permanentes</button>
+    
+    
+    <p class="Resultado1" id="Fte3"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 4</h3>
+    <img src="./images/fuente.jpg" alt="Tester"/>
+    <p> ¿ Que es 80 Plus </p>
+    <button class="alinks" id="buttonfte4ejer1">Estandar de eficiencia </button>
+    <button  class="alinks" id="buttonfte4ejer2" >Conector</button>
+    <button class="alinks" id="buttonfte4ejer3" >Tipo de corriente</button>
+    
+    <p class="Resultado1" id="Fte4"> </p>
+    </div>
+    
+    <div class=“button-container” id="button-container">
+      
+      <h3>  Ejercicio 5</h3>
+      <img src="./images/fuente.jpg" alt="Fuente PC" class="fotoejerc"/>
+      <p> Cual es la primera medida de seguridad</p>
+      <button class="alinks" id="buttonfte5ejer1" >Fusible</button>
+      <button  class="alinks" id="buttonfte5ejer2">Las Bobinas</button>
+     
+      <p class="Resultado1" id="Fte5"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 6</h3>
+      <img src="./images/fuente.jpg" alt="adaptador"class="fotoejerc"/>
+      <p> ¿ Parte que hace la conversion de la fuente?</p>
+      <button class="alinks" id="buttonfte6ejer1" >Primaria</button>
+      <button  class="alinks" id="buttonfte6ejer2" >Secundaria</button>
+      <button  class="alinks" id="buttonfte6ejer3" >Cable</button>
+      
+      
+      <p class="Resultado1" id="Fte6"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 7</h3>
+      <img src="./images/fuente.jpg" alt="Tester" class="fotoejerc"/>
+      <p> ¿ Que es eso?</p>
+      <button class="alinks" id="buttonfte7ejer1" >Fusible </button>
+      <button  class="alinks" id="buttonfte7ejer2" >Bobina</button>
+      <button  class="alinks" id="buttonfte7ejer3" >Transformador</button>
+      
+      
+      <p class="Resultado1" id="Fte7"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 8</h3>
+      <img src="./images/fuente.jpg" alt="Tester" class="fotoejerc"/>
+      <p> ¿ Donde veo los valores de la fuente? </p>
+      <button class="alinks" id="buttonfte8ejer3" >Cable </button>
+      <button  class="alinks" id="buttonfte8ejer2" >Conectores</button>
+      <button  class="alinks" id="buttonfte8ejer1" >Etiqueta</button>
+      
+    
+      <p class="Resultado1" id="Fte8"> </p>
+      </div>
+    
+      
+    <hr>
+    
+    <div class=“button-container” id="button-container">
+     <h3>Ejercicio 9</h3>
+      <img src="./images/fuentepc.jpg" alt="Tester" class="imgdeWeb" />
+      <p> Señale que parte de la fuente se encarga de dividir en 12, 3,3 y 5v   </p>
+    <button class="alinks" id="buttonfte9ejer3">Primaria</button>
+    <button  class="alinks" id="buttonfte9ejer1">Secundaria</button>
+    <button class="alinks" id="buttonfte9ejer2">Los cables</button>
+    
+    <p class="Resultado1" id="Fte9"> </p>
+    </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 10</h3>
+      <img src="./images/fuentepc.jpg" alt="Tester" class="imgdeWeb" />
+      <p> Señale cual es la salida hacia la Placa Madre</p>
+    <button class="alinks" id="buttonfte10ejer3" >Primaria</button>
+    <button  class="alinks" id="buttonfte10ejer2" >Secundaria</button>
+    <button class="alinks" id="buttonfte10ejer1" >Los cables</button>
+    
+    <p class="Resultado1" id="Fte10"> </p>
+    </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 11</h3>
+      <img src="./images/fuentepc.jpg" alt="Tester" class="imgdeWeb" />
+      <p> Que cable pondria en la fuente para tener energia </p>
+    <button class="alinks" id="buttonfte11ejer3">El conector VGA</button>
+    <button  class="alinks" id="buttonfte11ejer2">El molex</button>
+    <button class="alinks" id="buttonfte11ejer1">El que va la corriente</button>
+    
+    <p class="Resultado1" id="Fte11"> </p>
+    </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 12</h3>
+      <img src="./images/fuentepc.jpg" alt="Tester" class="imgdeWeb" />
+      <p> Que fuente es mejor para la pc? </p>
+    <button class="alinks" id="buttonfte12ejer3">No se</button>
+    <button  class="alinks" id="buttonfte12ejer2">Genericas</button>
+    <button class="alinks" id="buttonfte12ejer1">80 PLUS</button>
+    
+    <p class="Resultado1" id="Fte12"> </p>
+    </div>
+    <hr id="separatemas">
+    </div>
+     
+    
+      <div id="PregDifFte">
+        <div id="div1">
+        <h1 id="h1PM">Diferencias de fuente</h1> 
+        
+      </div>
+      <hr>
+      
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 1</h3>
+      <img src="./images/fuente.jpg" alt="Shuko"/>
+      <p> Que fuente es mas pesada?</p>
+      <button class="alinks" id="btndiffteejer2">Generica</button>
+      <button  class="alinks" id="btndiffteejer1">80 Plus</button>
+      
+      <p class="Resultado1" id="difFte1"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 2</h3>
+      <img src="./images/fuente.jpg" alt="adaptador"/>
+      <p> Donde coloco fuente 80 PLUS </p>
+      <button class="alinks" id="btndiffteejer3" >Arriba</button>
+      <button  class="alinks" id="btndiffteejer4" >Abajo</button>
+      
+      
+      <p class="Resultado1" id="difFte2"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 3</h3>
+      <img src="./images/fuente.jpg" alt="Tester"/>
+      <p> Fuente que da mas energia a la PC?</p>
+      <button class="alinks inEj2" id="button1eje1" >Generica</button>
+      <button  class="alinks" id="btndiffteejer5" >80 Plus</button>
+      <button  class="alinks inEj2" id="button2ejer2" >Ambas son iguales</button>
+      
+     
+      <p class="Resultado1" id="difFte3"> </p>
+      
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 4</h3>
+      <img src="./images/fuente.jpg" alt="Tester"/>
+      <p> A cual se le sacan los conectores </p>
+      <button class="alinks" id="btndiffteejer6" >Semimodulares</button>
+      <button  class="alinks inEj3" id="button2ejer1" >Generica</button>
+      <button class="alinks inEj3" id="button3ejer1" >Ambas</button>
+      
+      <p class="Resultado1" id="difFte4"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+        <h3>Ejercicio 5</h3>
+        <img src="./images/fuente.jpg" alt="Tester"/>
+        <p> Cuales son mas caras ($) </p>
+        <button class="alinks" id="btndiffteejer7" >Semimodulares</button>
+        <button  class="alinks inEj4" id="button2ejer1" >Generica</button>
+        <button class="alinks inEj4" id="button3ejer1" >Ambas</button>
+        
+        <p class="Resultado1" id="difFte5"> </p>
+        </div>
+      
+      
+      <hr id="separatemas">
+      </div>
+    
+      
+      <div id="Preg80Plus">
+          <div id="div1">
+      <h1 id="h1PM">80 Plus </h1> 
+      
+    </div>
+    <hr>
+    
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 1</h3>
+    <img src="./images/fuentepc.jpg" alt="Shuko" class="imgdeWeb"/>
+    <p> Es bueno que tengan las fuentes 80 Plus?</p>
+    <button class="alinks" id="btn80fte1">NO</button>
+    <button  class="alinks" id="btn80fte2">SI</button>
+    
+    <p class="Resultado1" id="fte801"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 2</h3>
+    <img src="./images/fuentepc.jpg" alt="adaptador" class="imgdeWeb"/>
+    <p> Cual es la mas eficiente</p>
+    <button class="alinks" id="btn80fte3">Generica </button>
+    <button  class="alinks" id="btn80fte4">80 PLUS</button>
+    
+    
+    <p class="Resultado1" id="fte802"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 3</h3>
+    <img src="./images/fuentepc.jpg" alt="Tester" class="imgdeWeb"/>
+    <p> ¿ Cual es la mas eficiente?</p>
+    <button class="alinks inEj5"  >80 Plus Bronce</button>
+    <button  class="alinks" id="btn80fte5" >80 Plus Titanium</button>
+    <button  class="alinks inEj5"  >80 Plus Gold</button>
+    
+    <p class="Resultado1" id="fte803"> </p>
+    </div>
+    
+    
+    <hr id="separatemas">
+    </div>
+    <div id="PregConexFte">
+      <div id="div1">
+      <h1 id="h1PM">Conexiones de fuente </h1> 
+    </div>
+    <hr id="separatemasw">
+    
+    
+    <div id="frame001">
+      <div id="font001">
+          <h2>Identifia y responde preguntas de cada conexion</h2><text>Preguntas: <text id="number001">0</text></text><br />
+          <text>Puntaje: <text id="score001">0</text></text>
+          <hr  class="hrjuego">
+          <div id="disappear001">
+              <button class="buttons002" onclick="begin001()">Inicia</button>
+          </div>
+          <p id="message001"></p>
+          <p id="message002"></p>
+          <p id="message003"></p>
+          <p id="message004"></p>
+      </div>
+    </div>
+    
+    
+    <hr id="separatemas">
+    
+    </div>
+    <div id="PregFallasFte">
+      <div id="div1">
+      <h1 id="h1PM">Fallas de fuente</h1> 
+      
+    </div>
+    <hr>
+    
+    <div class=“button-containerradio” id="button-containerradio">
+    <h3>Ejercicio 1</h3>
+    <img src="./images/fuente.jpg" alt="Shuko"/>
+    <div id="contenedor">
+      <h1>Que fallas puedo tener  si la fuente no enciende?</h1>
+      <table  class="Quizfalla1" >
+       <tr>
+          <td class="tdquizz1">Desconectada<input type="radio" value="a1" name="1" /></td>
+          <td class="tdquizz1">Conectada<input type="radio" value="a2" name="1"/></td>
+          <td class="tdquizz1">Interruptor encendido<input type="radio" value="a3" name="1" /></td>
+          <td class="tdquizz1">A4<input type="radio" value="a4" name="1" /></td>
+       </tr> 
+    
+          <td class="tdquizz1">V correcto<input type="radio" value="b1" name="2" /></td>
+          <td class="tdquizz1">Quemado fusible<input type="radio" value="b2" name="2"/></td>
+          <td class="tdquizz1">Corriente en el cable<input type="radio" value="b3" name="2" /></td>
+          <td class="tdquizz1">Cable ok<input type="radio" value="b4" name="2" /></td>
+       </tr> 
+       <tr>
+          <td class="tdquizz1">Diodos ok<input type="radio" value="c1" name="3" /></td>
+          <td class="tdquizz1">Bobinas de 3.3, 5 y 12 V<input type="radio" value="c2" name="3"/></td>
+          <td class="tdquizz1">Roto condensador<input type="radio" value="c3" name="3" /></td>
+          <td class="tdquizz1">Placa sucia<input type="radio" value="c4" name="3" /></td>
+       </tr> 
+       <tr>
+          <td class="tdquizz1">Placa ok<input type="radio" value="d1" name="4" /></td>
+          <td class="tdquizz1">Interruptor encendido<input type="radio" value="d2" name="4"/></td>
+          <td class="tdquizz1">Corriente en el cable<input type="radio" value="d3" name="4" /></td>
+          <td class="tdquizz1">Quemado componete electrico<input type="radio" value="d4" name="4" /></td>
+       </tr> 
+       <tr>
+          <td class="tdquizz1">Seleccionado voltaje incorecto<input type="radio" value="f1" name="5" /></td>
+          <td class="tdquizz1">Ventilador funcionando<input type="radio" value="f2" name="5"/></td>
+          <td class="tdquizz1">Diodos ok<input type="radio" value="f3" name="5" /></td>
+          <td class="tdquizz1">Puente ok<input type="radio" value="f4" name="5" /></td>
+       </tr> 
+       <tr> <td colspan="2"> 
+       <input type="button" value="Corregir" onclick="comprobarRadio(respuestaCorrecta)" class="btnquiz" /></td></tr>
+      </table>
+        <div id="solucion"></div>
+       </div>
+    
+    
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 2</h3>
+    <img src="./images/fuente.jpg" alt="adaptador"/>
+    <p> Sabiendo los valores de la fuente, que pasa si uno de los valores es inferior ? </p>
+    <button class="alinks" id="button1ejer2" onclick="cambiarF2();">dañado uno de los transfomadores</button>
+    <button  class="alinks" id="button2ejer2" onclick="cambiar2();">Todo esta ok</button>
+    
+    
+    
+    <p class="Resultado1" id="Resultado2"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 3</h3>
+    <img src="./images/fallamolex.jpg" alt="Tester" class="imgdeWeb"/>
+    <p> Que sucede si encuentra este cable quemado?</p>
+    <button class="alinks" id="button1eje1" onclick="cambiarF3();">La fuente no anda</button>
+    <button  class="alinks" id="button2ejer1" onclick="cambiarF3();">La fuente anda, normal</button>
+    <button  class="alinks" id="button2ejer2" onclick="cambiar2();">Anda pero esa parte se daño</button>
+    
+    <p class="Resultado1" id="Resultado3"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 4</h3>
+    <img class="tester" src="./images/tester.jpg" alt="Tester"/>
+    <p> Señale en que posicion pondria el tester para medir fusible </p>
+    <button class="alinks" id="button1eje1" onclick="cambiarF4();">V ~</button>
+    <button  class="alinks" id="button2ejer1" onclick="cambiarF4();">V -</button>
+    <button class="alinks" id="button3ejer1" onclick="cambiar4();">=>|</button>
+    
+    <p class="Resultado1" id="Resultado4"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+    <h3>Ejercicio 5</h3>
+    <img class="tester" src="./images/molexroto.png" alt="Tester"/>
+    <p> Que hacer si tengo esta falla </p>
+    <button class="alinks" id="button1eje1" >Cambiar de conector P20</button>
+    <button  class="alinks" id="button2ejer1" >Esta ok</button>
+    <button class="alinks" id="button3ejer1" >Reparar molex</button>
+    
+    <p class="Resultado1" id="Resultado4"> </p>
+    </div>
+    <div class=“button-container” id="button-container">
+      <h3>Ejercicio 6</h3>
+      <img class="tester" src="./images/sobretensionconect.jpg" alt="Tester"/>
+      <p> Conector quemado, por que? </p>
+      <button class="alinks" id="button1eje1" >Cmbio de fuente</button>
+      <button  class="alinks" id="button2ejer1" >Esta ok</button>
+      <button class="alinks" id="button3ejer1" >Solo esta sucio</button>
+      
+      <p class="Resultado1" id="Resultado4"> </p>
+      </div>
+    
+    
+    <hr id="separatemas">
+    </div>
+      <div id="div1">
+        <h1 id="h1PM">Ejercicios de Placamadre </h1> 
+        
+    </div>
+    <hr>
+    
+      <div class="info-pet">
+        <img src="./images/variedadPM.jpg"  loading="lazy" alt="Tipos de Placa Madre" onclick="PM.tiposPMMOstrar()">
+        <h4>Tipos</h4>
+      </div>
+      <div class="info-pet">
+        <img src="./images/partesPM.jpg"  loading="lazy" alt="Partes de fuente" onclick="PM.partesPMMOstrar()">
+        <h4>Partes de placamadre</h4>
+      </div>
+      <div class="info-pet">
+        <img src="./images/difenerciaspM.jpg"  loading="lazy" alt=" Diferencias" onclick="PM.diferPMMOstrar()">
+        <h4>Diferencias </h4>
+      </div>
+      
+      <div class="info-pet">
+        <img src="./images/conectoresPm.jpg" loading="lazy" alt="Conectores de Placa Madre" onclick="PM.conectPMMOstrar()">
+        <h4>Conectores</h4>
+      </div>
+      <div class="info-pet">
+        <img src="./images/placaDañada.jpg"  loading="lazy" alt="Fallas" onclick="PM.fallasPMMOstrar()">
+        <h4>Fallas</h4>
+      </div>
+    <div id="PregTiposPM"> 
+      <div id="div1">
+        <h1 id="h1PM">Tipos de Placa Marde</h1> 
+      </div>
+      
+      <hr>
+      
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 1</h3>
+      <img src="./images/placamadre.jpg" alt="placamadre"/>
+      <p> Que tipo de placa madre encontramos generalmente en un equipo de escritorio?</p>
+      <button class="alinks" id="button1ejer1">pico - ITX</button>
+      <button  class="alinks" id="button2ejer1">ATX</button>
+      <button class="alinks" id="button1ejer1">Mini-ATX</button>
+      <button  class="alinks" id="button2ejer1">E-ATX</button>
+      
+      <p class="Resultado1" id="Resultado1"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 2</h3>
+      <img src="./images/placamadre.jpg" alt="placamadre"/>
+      <p> Que tipo de placa madre encontramos generalmente en un equipo Gamer? </p>
+      <button class="alinks" id="button1ejer1">pico - ITX</button>
+      <button  class="alinks" id="button2ejer1">ATX</button>
+      <button class="alinks" id="button1ejer1">Mini-ATX</button>
+      <button  class="alinks" id="button2ejer1">E-ATX</button>
+      
+      <p class="Resultado1" id="Resultado2"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 3</h3>
+      <img src="./images/placamadre.jpg" alt="placamadre"/>
+      <p> Que tipo de placa madre encontramos generalmente en un equipo de pequeño tamaño? </p>
+      <button class="alinks" id="button1ejer1">pico - ITX</button>
+      <button  class="alinks" id="button2ejer1">ATX</button>
+      <button class="alinks" id="button1ejer1">Mini-ATX</button>
+      <button  class="alinks" id="button2ejer1">E-ATX</button>
+      
+      
+      <p class="Resultado1" id="Resultado3"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 4</h3>
+      <img src="./images/placamadre.jpg" alt="placamadre"/>
+      <p> En que placamadre puedo poner las ultimas tarjetas de video </p>
+      <button class="alinks" id="button1ejer1">pico - ITX</button>
+      <button class="alinks" id="button1ejer1">Mini-ATX</button>
+      <button  class="alinks" id="button2ejer1">E-ATX</button>
+      
+      <p class="Resultado1" id="Resultado4"> </p>
+      </div>
+      
+      
+      <hr id="separatemas">
+    
+    </div>
+    
+    <div id="PregPartesPM"> 
+      <div id="div1">
+        <h1 id="h1PM">Partes de Placamadre</h1> 
+        
+      </div>
+      <hr>
+      
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 1</h3>
+      <img src="./images/enchufeshuko.jpg" alt="Shuko"/>
+      <button class="alinks" id="button1ejer1">NO</button>
+      <button  class="alinks" id="button2ejer1">SI</button>
+      <p> Ejerc 1 de partes de plmadre?</p>
+      <p class="Resultado1" id="Resultado1"> </p>
+      </div>
+    
+      <div id="frame001">
+        <div id="font001">
+            <h2>Identifia y responde preguntas de cada conexion</h2><text>Preguntas: <text id="number001">0</text></text><br />
+            <text>Puntaje: <text id="score001">0</text></text>
+            <hr  class="hrjuego">
+            <div id="disappear001">
+                <button class="buttons002" onclick="begin001()">Inicia</button>
+            </div>
+            <p id="message001"></p>
+            <p id="message002"></p>
+            <p id="message003"></p>
+            <p id="message004"></p>
+        </div>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 2</h3>
+      <img src="./images/adaptadorcorr.jpg" alt="adaptador"/>
+      <button class="alinks" id="button1ejer2" onclick="cambiarF2();">Si</button>
+      <button  class="alinks" id="button2ejer2" onclick="cambiar2();">No</button>
+      
+      <p> Sabiendo los valores de la fuente, que pasa si uno de los valores es inferior ? </p>
+      <p class="Resultado1" id="Resultado2"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 3</h3>
+      <img src="./images/tierra.png" alt="Tester"/>
+      <button class="alinks" id="button1eje1" onclick="cambiarF3();">NO</button>
+      <button  class="alinks" id="button2ejer1" onclick="cambiarF3();">SI</button>
+      
+      <p> Segun lo aprendido el lugar donde coloca las pac deberia tener conexion a tierra?</p>
+      <p class="Resultado1" id="Resultado3"> </p>
+      </div>
+      
+     <div class=“button-container” id="button-container">
+      <h3>Ejercicio 4</h3>
+      <img src="./images/tester.jpg" alt="Tester"/>
+      <button class="alinks" id="button1eje1" onclick="cambiarF4();">V ~</button>
+      <button  class="alinks" id="button2ejer1" onclick="cambiarF4();">V -</button>
+      <button class="alinks" id="button3ejer1" onclick="cambiar4();">=>|</button>
+      <p> Señale en que posicion pondria el tester para medir fusible </p>
+      <p class="Resultado1" id="Resultado4"> </p>
+      </div>
+      
+      
+      <hr id="separatemas">
+    
+    </div>
+    <div id="PregDifPM"> 
+      <div id="div1">
+        <h1 id="h1PM">Diferencias de Placa Madre</h1> 
+        
+      </div>
+      <hr>
+      
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 1</h3>
+      <img src="./images/enchufeshuko.jpg" alt="Shuko"/>
+      <button class="alinks" id="button1ejer1">NO</button>
+      <button  class="alinks" id="button2ejer1">SI</button>
+      <p> Que puede pasar si la fuente no enciende?</p>
+      <p class="Resultado1" id="Resultado1"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 2</h3>
+      <img src="./images/adaptadorcorr.jpg" alt="adaptador"/>
+      <button class="alinks" id="button1ejer2" onclick="cambiarF2();">Si</button>
+      <button  class="alinks" id="button2ejer2" onclick="cambiar2();">No</button>
+      
+      <p> Sabiendo los valores de la fuente, que pasa si uno de los valores es inferior ? </p>
+      <p class="Resultado1" id="Resultado2"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 3</h3>
+      <img src="./images/tierra.png" alt="Tester"/>
+      <button class="alinks" id="button1eje1" onclick="cambiarF3();">NO</button>
+      <button  class="alinks" id="button2ejer1" onclick="cambiarF3();">SI</button>
+      
+      <p> Segun lo aprendido el lugar donde coloca las pac deberia tener conexion a tierra?</p>
+      <p class="Resultado1" id="Resultado3"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 4</h3>
+      <img src="./images/tester.jpg" alt="Tester"/>
+      <button class="alinks" id="button1eje1" onclick="cambiarF4();">V ~</button>
+      <button  class="alinks" id="button2ejer1" onclick="cambiarF4();">V -</button>
+      <button class="alinks" id="button3ejer1" onclick="cambiar4();">=>|</button>
+      <p> Señale en que posicion pondria el tester para medir fusible </p>
+      <p class="Resultado1" id="Resultado4"> </p>
+      </div>
+      
+      
+      <hr id="separatemas">
+    
+    </div>
+    
+    <div id="PregConectPM"> 
+      <div id="div1">
+        <h1 id="h1PM">Conectores de Placamadre</h1> 
+        
+      </div>
+      <hr>
+      
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 1</h3>
+      <img src="./images/enchufeshuko.jpg" alt="Shuko"/>
+      <button class="alinks" id="button1ejer1">NO</button>
+      <button  class="alinks" id="button2ejer1">SI</button>
+      <p> Que puede pasar si la fuente no enciende?</p>
+      <p class="Resultado1" id="Resultado1"> </p>
+      </div>
+      <div id="frame001">
+        <div id="font001">
+            <h2>Identifia y responde preguntas de cada conexion</h2><text>Preguntas: <text id="number001">0</text></text><br />
+            <text>Puntaje: <text id="score001">0</text></text>
+            <hr  class="hrjuego">
+            <div id="disappear001">
+                <button class="buttons002" onclick="begin001()">Inicia</button>
+            </div>
+            <p id="message001"></p>
+            <p id="message002"></p>
+            <p id="message003"></p>
+            <p id="message004"></p>
+        </div>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 2</h3>
+      <img src="./images/adaptadorcorr.jpg" alt="adaptador"/>
+      <button class="alinks" id="button1ejer2" onclick="cambiarF2();">Si</button>
+      <button  class="alinks" id="button2ejer2" onclick="cambiar2();">No</button>
+      
+      <p> Sabiendo los valores de la fuente, que pasa si uno de los valores es inferior ? </p>
+      <p class="Resultado1" id="Resultado2"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 3</h3>
+      <img src="./images/tierra.png" alt="Tester"/>
+      <button class="alinks" id="button1eje1" onclick="cambiarF3();">NO</button>
+      <button  class="alinks" id="button2ejer1" onclick="cambiarF3();">SI</button>
+      
+      <p> Segun lo aprendido el lugar donde coloca las pac deberia tener conexion a tierra?</p>
+      <p class="Resultado1" id="Resultado3"> </p>
+      </div>
+      <div class=“button-container” id="button-container">
+      <h3>Ejercicio 4</h3>
+      <img src="./images/tester.jpg" alt="Tester"/>
+      <button class="alinks" id="button1eje1" onclick="cambiarF4();">V ~</button>
+      <button  class="alinks" id="button2ejer1" onclick="cambiarF4();">V -</button>
+      <button class="alinks" id="button3ejer1" onclick="cambiar4();">=>|</button>
+      <p> Señale en que posicion pondria el tester para medir fusible </p>
+      <p class="Resultado1" id="Resultado4"> </p>
+      </div>
+       
+     
+
+    
+    <!-- boton arriba -->
+    <img src="./images/arriba.png" alt="" id="ir-arriba">
+<div id="section"></div>
+<div id="aside"></div>
+
+</main>
+
+<h1 class="heading">How good is your Memory?</h1>  
+<div class="count-container">  
+    
+ <p class="attempts">Attempts: <span class="count"></span></p>  
+ <span class="reset">Reset <i class="fas fa-sync"></i></span>  
+ <p class="time">Time: <span class="min-count">00</span>: <span class="sec-count">00</span></p>  
+</div>  
+ <div id="game"></div> 
+
+<footer class="footer">
+    <div class="footer-left">
+    <img src="./images/logoit.png" alt="">
+    <p> lorem hkskjfhdkjs hdfshfkjdhs </p>
+    <div class="social">
+    <a href=""><i class="fa fa-facebook">asa</i></a>
+    <a href=""><i class="fa fa-twitter"></i></a>
+    <a href=""><i class="fa fa-youtube">asa</i></a>
+    <a href=""><i class="fa fa-linkedin"></i></a>
+    </div>
+    </div>
+    <ul class="footer-right">
+    <li>
+    <h2> no se que poner aca </h2>
+    <ul class="box">
+    <li><a href="">hkjfshkdshfsd</a></li>
+    <li><a href="">nbmcvnbvcb </a></li>
+    <li><a href="">hjdfghhdfl </a></li>
+    </ul>
+    </li>
+    <li class="box">
+    <h2> Address</h2>
+    <ul class="box">
+    <li><a href="">uruguay</a></li>
+    <li><a href="">tel. 4564465 </a></li>
+    <li><a href="">Mail: gdjasgdjg@gmail.com </a></li>
+    </ul>
+    </li>
+    
+    </ul>
+    <div class="footer-bottom">
+    <p>All rights reserved by &copy; copco</p>
+    
+    
+    </div>
+    
+    </footer>
+<script src="js/funcdeButtons.js"></script>
+<script src="./js/ejercFuente.js"></script>
+<script src="./js/diferenciasfte.js"></script>
+<script src="./js/80Plus.js"></script>
+<script src="./js/fallasfte.js"></script>
+<script src="./js/juego2.js"></script>
+
+
+      
+   </body>  
+  </html>  
