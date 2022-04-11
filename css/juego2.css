@@ -1,4 +1,6 @@
- 
+ #pares{
+   display: none;
+ }
  .heading {  
   text-align: center;  
   background: rgb(0, 15, 46);  
@@ -44,11 +46,11 @@
   transform-style: preserve-3d;  
   margin: 5px;  
  }  
- .card,  
- .back,  
- .front {  
-  height: 70px;  
-  width: 70px;  
+/* .card,   */
+  .back,  
+ .front, .card {  
+  height: 100px;  
+  width: 100px;  
  }  
  .back,  
  .front {  
@@ -56,7 +58,7 @@
   backface-visibility: hidden;  
  }  
  .front {  
-  background: #fab942 url('../media/question.gif') no-repeat center center /  
+  background: #fab942  no-repeat center center /  
    contain;  
  }  
  .back {  
@@ -72,7 +74,7 @@
  }  
  .match .front {  
   border: 0px;  
-  background: rgb(4, 44, 2) url("../media/celebrate.gif") no-repeat center center /  
+  background: rgb(4, 44, 2) url("../images/comodin.jpg") no-repeat center center /  
   contain !important;  
   cursor: not-allowed;  
   transform: none !important;  

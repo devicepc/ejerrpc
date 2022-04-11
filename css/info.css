@@ -21,7 +21,6 @@
 .info-pet{
     margin: 20px;
 }
-
 .info-pet img{
     width: 180px;
     height: 180px;
@@ -30,12 +29,9 @@
 
 }
 .info-pet:hover{
-    width: 190px;
-    height: 190px;
-    border-radius: 45% ;
-    color: #346b7e;
-    text-decoration: underline;
-    /* margin-bottom: 100px; */
     
+    border-radius: 25%;
+    text-decoration: underline;
+        
     
 }
