@@ -1,52 +1,52 @@
 // Card data  
 const cardsArray2 = [  
     {  
-     name: "pokemon1",  
-     img: "./images/disco.jpg",  
+     name: "parte1",  
+     img: "./images/preguntasPM/auxdefuente.jpg",  
     },  
     {  
-     name: "pokemon2",  
-     img: "./images/fuente.jpg",  
+     name: "parte2",  
+     img: "./images/preguntasPM/bios.jpg",  
     },  
     {  
-     name: "pokemon3",  
-     img: "./images/adaptadorcorr.jpg",  
+     name: "parte3",  
+     img: "./images/preguntasPM/ide.jpg",  
     },  
     {  
-     name: "pokemon4",  
-     img: "./images/tarjred.jpg",  
+     name: "parte4",  
+     img: "./images/preguntasPM/conectorplacabase.jpg",  
     },  
     {  
-     name: "pokemon5",  
-     img: "./images/tarjgraf.png",  
+     name: "parte5",  
+     img: "./images/preguntasPM/LGA_Socket_1366.jpg",  
     },  
     {  
-     name: "pokemon6",  
-     img: "./images/partesPM.jpg",  
+     name: "parte6",  
+     img: "./images/preguntasPM/paneltrasero.jpg",  
     },  
     {  
-     name: "pokemon7",  
-     img: "./images/tiposProc.png",  
+     name: "parte7",  
+     img: "./images/preguntasPM/PCI.jpg",  
     },  
     {  
-     name: "pokemon8",  
-     img: "./images/placamadre.jpg",  
+     name: "parte8",  
+     img: "./images/preguntasPM/PCIEXX1.jpg",  
     },  
     {  
-     name: "pokemon9",  
-     img: "./images/memoriaram.jpg",  
+     name: "parte9",  
+     img: "./images/preguntasPM/PILA.jpg",  
     },  
     {  
-     name: "pokemon10",  
-     img: "./images/procesador.jpg",  
+     name: "parte10",  
+     img: "./images/preguntasPM/RAM.jpg",  
     },  
     {  
-     name: "pokemon11",  
-     img: "./images/fuentepc.jpg",  
+     name: "parte11",  
+     img: "./images/preguntasPM/sata.jpg",  
     },  
     {  
-     name: "pokemon12",  
-     img: "./images/variedadPM.jpg",  
+     name: "parte12",  
+     img: "./images/preguntasPM/SSD-M2.jpg",  
     },  
    ];  
    // GAME   

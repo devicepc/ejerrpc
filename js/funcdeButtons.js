@@ -216,6 +216,7 @@ function MostrarCorr(){
     ocultar80plusFte();
     ocultarConectFte();
     ocultarFallasFte();
+    moveFTE();
 }
 
 function ocultarFte(){
@@ -228,6 +229,7 @@ function MostrarFte(){
      ocultar80plusFte();
     ocultarConectFte();
      ocultarFallasFte();  
+     moveFTE();
 }
 
 
@@ -241,6 +243,7 @@ function MostrarDifFte(){
     ocultar80plusFte();
     ocultarConectFte();
     ocultarFallasFte();
+    moveFTE();
 }
 function ocultar80plusFte(){
     document.getElementById("Preg80Plus").style.display="none";
@@ -252,6 +255,7 @@ function Mostrar80plusFte(){
     ocultarDifFte();
     ocultarConectFte();
     ocultarFallasFte();
+    moveFTE();
 }
 function ocultarConectFte(){
     document.getElementById("PregConexFte").style.display="none";
@@ -263,6 +267,7 @@ function MostrarConectFte(){
     ocultarDifFte();
     ocultar80plusFte();
     ocultarFallasFte();
+    moveFTE();
 }
 
 function ocultarFallasFte(){
@@ -275,6 +280,12 @@ function MostrarFallasFte(){
     ocultarDifFte();
     ocultar80plusFte();
     ocultarConectFte();
+    moveFTE();
+}
+// mover
+function moveFTE(){
+    window.scrollTo(0,730);
+   
 }
 
 // funcion de  Placa madre ocultar y mostar
@@ -283,27 +294,17 @@ const PM ={
         document.getElementById("PregTiposPM").style.display="block";
         this.partesPMOcultar();
         this.diferPMOcultar();
-        this.conectPMOcultar();
         this.fallasPMOcultar();
     },
     partesPMMOstrar: function (){
         document.getElementById("PregPartesPM").style.display="block";
         this.tiposPMOcultar();
         this.diferPMOcultar();
-        this.conectPMOcultar();
         this.fallasPMOcultar();
     },
     diferPMMOstrar: function (){
         document.getElementById("PregDifPM").style.display="block";
         this.partesPMOcultar();
-        this.tiposPMOcultar();
-        this.conectPMOcultar();
-        this.fallasPMOcultar();
-    },
-    conectPMMOstrar: function (){
-        document.getElementById("PregConectPM").style.display="block";
-        this.partesPMOcultar();
-        this.diferPMOcultar();
         this.tiposPMOcultar();
         this.fallasPMOcultar();
     },
@@ -311,7 +312,6 @@ const PM ={
         document.getElementById("PregFallasPM").style.display="block";
         this.partesPMOcultar();
         this.diferPMOcultar();
-        this.conectPMOcultar();
         this.tiposPMOcultar();
     },
 
@@ -509,7 +509,7 @@ const Proc ={
 // scrool up
 document.getElementById("ir-arriba").addEventListener("click",scrollUp);
 function scrollUp(){
-    var currentScroll = document.documentElement.scrollTop;
+    let currentScroll = document.documentElement.scrollTop;
     if (currentScroll >0){
         window.scrollTo(0,0);
     }
@@ -562,11 +562,12 @@ const Disc ={
 
 }
 
-
 function Mostrarma(){
     window.scroll({
         top: 5500,
         left: 0,
         behavior: 'smooth'
+        
       });
+      document.getElementById("pares").style.display="block";
 }
