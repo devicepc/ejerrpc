@@ -9,7 +9,7 @@ const cardsArray2 = [
      img: "./images/preguntasPM/bios.jpg",  
     },  
     {  
-     name: "parte3",  
+     name: "parte2",  
      img: "./images/preguntasPM/ide.jpg",  
     },  
     {  
@@ -56,7 +56,8 @@ const cardsArray2 = [
    // game.addEventListener("click", secCount);  
    game.appendChild(grid);  
    // DOUBLE ARREY  
-   let gameGrid = cardsArray2.concat(cardsArray2);  
+   let gameGrid = cardsArray2;
+//    .concat(cardsArray2);  
    // FOR RAMDOMISING THE CARDS EVERY TIME WE REFERESH THE PAGE  
    gameGrid.sort(() => 0.5 - Math.random());  
    // CREATE CARDS  
@@ -69,7 +70,7 @@ const cardsArray2 = [
     const back = document.createElement("div");  
     back.classList.add("back");  
     back.style.backgroundImage = `url(${item.img})`;  
-    grid.appendChild(card);  
+     grid.appendChild(card);  
     card.appendChild(front);  
     card.appendChild(back);  
    });  
@@ -106,7 +107,7 @@ const cardsArray2 = [
    let delay = 1200;  
    // FUNCTIONS FOR THE GAME  
    const match = () => {  
-    var selected = document.querySelectorAll(".selected");  
+    let selected = document.querySelectorAll(".selected");  
     selected.forEach((card) => {  
      card.classList.add("match");  
     });  
@@ -115,7 +116,7 @@ const cardsArray2 = [
     firstGuess = "";  
     secondGuess = "";  
     count = 0;  
-    var selected = document.querySelectorAll(".selected");  
+    let selected = document.querySelectorAll(".selected");  
     selected.forEach((card) => {  
      card.classList.remove("selected");  
     });  

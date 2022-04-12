@@ -88,7 +88,7 @@ else if (a == "6") {
     message001.innerHTML = "Fin del  Quiz";
     message002.innerHTML = "";
     message003.innerHTML = "";
-    message004.innerHTML = "<button class=buttons002 onclick=repeat001()>Repetir</button>";
+    message004.innerHTML = "<button class=buttons002 onclick=repeat001()>Salir</button>";
 }
 }
 

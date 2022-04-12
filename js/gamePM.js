@@ -19,25 +19,25 @@ let questionPM001 = ["<img src=images/preguntasPM/auxdefuente.jpg height=40 /><b
 
 ];
 
-let optionsPM001 = ["<button class=buttons001 onclick=q1i()>Disco duro</button><br /><br /><button class=buttons001 onclick=q1c()>Aux de Micro</button>"];
-let optionsPM002 = ["<button class=buttons001 onclick=q1c()>Bios</button><br /><br /><button class=buttons001 onclick=q1i()>Chipset</button>"];
-let optionsPM003 = ["<button class=buttons001 onclick=q1c()>Botones reset, encendido</button><br /><br /><button class=buttons001 onclick=q1i()>Panel delantero</button>"];
-let optionsPM004 = ["<button class=buttons001 onclick=q1i()>Socket</button><br /><br /><button class=buttons001 onclick=q1c()>Chipset  </button>"];
-let optionsPM005 = ["<button class=buttons001 onclick=q1c()>Conector alimentación ATX</button><br /><br /><button class=buttons001 onclick=q1i()>Aux de Micro</button>"];
-let optionsPM006 = ["<button class=buttons001 onclick=q1c()>IDE</button><br /><br /><button class=buttons001 onclick=q1i()>SATA</button>"];
-let optionsPM007 = ["<button class=buttons001 onclick=q1i()>Bios</button><br /><br /><button class=buttons001 onclick=q1c()>Socket</button>"];
-let optionsPM008 = ["<button class=buttons001 onclick=q1c()>Panel frontal</button><br /><br /><button class=buttons001 onclick=q1i()>Conector de USB</button>"];
-let optionsPM009 = ["<button class=buttons001 onclick=q1c()>Panel trasero</button><br /><br /><button class=buttons001 onclick=q1i()>Panel frontal</button>"];
-let optionsPM010 = ["<button class=buttons001 onclick=q1i()>PCI EX x1</button><br /><br /><button class=buttons001 onclick=q1c()>PCI  </button>"];
-let optionsPM011 = ["<button class=buttons001 onclick=q1c()>PCI EX x1</button><br /><br /><button class=buttons001 onclick=q1i()>PCI EX x16</button>"];
-let optionsPM012 = ["<button class=buttons001 onclick=q1c()>PCI EX x16</button><br /><br /><button class=buttons001 onclick=q1i()>IDE</button>"];
+let optionsPM001 = ["<button class=buttons001 onclick=qPM1i()>Disco duro</button><br /><br /><button class=buttons001 onclick=qPM1c()>Aux de Micro</button>"];
+let optionsPM002 = ["<button class=buttons001 onclick=qPM1c()>Bios</button><br /><br /><button class=buttons001 onclick=qPM1i()>Chipset</button>"];
+let optionsPM003 = ["<button class=buttons001 onclick=qPM1c()>Botones reset, encendido</button><br /><br /><button class=buttons001 onclick=qPM1i()>Panel delantero</button>"];
+let optionsPM004 = ["<button class=buttons001 onclick=qPM1i()>Socket</button><br /><br /><button class=buttons001 onclick=qPM1c()>Chipset  </button>"];
+let optionsPM005 = ["<button class=buttons001 onclick=qPM1c()>Conector alimentación ATX</button><br /><br /><button class=buttons001 onclick=qPM1i()>Aux de Micro</button>"];
+let optionsPM006 = ["<button class=buttons001 onclick=qPM1c()>IDE</button><br /><br /><button class=buttons001 onclick=qPM1i()>SATA</button>"];
+let optionsPM007 = ["<button class=buttons001 onclick=qPM1i()>Bios</button><br /><br /><button class=buttons001 onclick=qPM1c()>Socket</button>"];
+let optionsPM008 = ["<button class=buttons001 onclick=qPM1c()>Panel frontal</button><br /><br /><button class=buttons001 onclick=qPM1i()>Conector de USB</button>"];
+let optionsPM009 = ["<button class=buttons001 onclick=qPM1c()>Panel trasero</button><br /><br /><button class=buttons001 onclick=qPM1i()>Panel frontal</button>"];
+let optionsPM010 = ["<button class=buttons001 onclick=qPM1i()>PCI EX x1</button><br /><br /><button class=buttons001 onclick=qPM1c()>PCI  </button>"];
+let optionsPM011 = ["<button class=buttons001 onclick=qPM1c()>PCI EX x1</button><br /><br /><button class=buttons001 onclick=qPM1i()>PCI EX x16</button>"];
+let optionsPM012 = ["<button class=buttons001 onclick=qPM1c()>PCI EX x16</button><br /><br /><button class=buttons001 onclick=qPM1i()>IDE</button>"];
 
-let optionsPM013 = ["<button class=buttons001 onclick=q1i()>VMR</button><br /><br /><button class=buttons001 onclick=q1c()>Pila</button>"];
-let optionsPM014 = ["<button class=buttons001 onclick=q1c()>Ranuras de memoria</button><br /><br /><button class=buttons001 onclick=q1i()>Conector de USB</button>"];
-let optionsPM015 = ["<button class=buttons001 onclick=q1c()>Reset CMOS</button><br /><br /><button class=buttons001 onclick=q1i()>Encendido</button>"];
-let optionsPM016 = ["<button class=buttons001 onclick=q1i()>SSD - M2</button><br /><br /><button class=buttons001 onclick=q1c()>Sata </button>"];
-let optionsPM017 = ["<button class=buttons001 onclick=q1c()>SSD - M2</button><br /><br /><button class=buttons001 onclick=q1i()>PCI EX X1</button>"];
-let optionsPM018 = ["<button class=buttons001 onclick=q1c()>VMR</button><br /><br /><button class=buttons001 onclick=q1i()>Reset CMOS</button>"];
+let optionsPM013 = ["<button class=buttons001 onclick=qPM1i()>VMR</button><br /><br /><button class=buttons001 onclick=qPM1c()>Pila</button>"];
+let optionsPM014 = ["<button class=buttons001 onclick=qPM1c()>Ranuras de memoria</button><br /><br /><button class=buttons001 onclick=qPM1i()>Conector de USB</button>"];
+let optionsPM015 = ["<button class=buttons001 onclick=qPM1c()>Reset CMOS</button><br /><br /><button class=buttons001 onclick=qPM1i()>Encendido</button>"];
+let optionsPM016 = ["<button class=buttons001 onclick=qPM1i()>SSD - M2</button><br /><br /><button class=buttons001 onclick=qPM1c()>Sata </button>"];
+let optionsPM017 = ["<button class=buttons001 onclick=qPM1c()>SSD - M2</button><br /><br /><button class=buttons001 onclick=qPM1i()>PCI EX X1</button>"];
+let optionsPM018 = ["<button class=buttons001 onclick=qPM1c()>VMR</button><br /><br /><button class=buttons001 onclick=qPM1i()>Reset CMOS</button>"];
 
 
 let c = 0;
@@ -52,20 +52,20 @@ messagePM002.innerHTML = optionsPM001;
 numberPM001.innerHTML = c++;
 }
 
-function q1c() {
+function qPM1c() {
 messagePM003.innerHTML = "Correcto";
 messagePM002.innerHTML = "";
 scorePM001.innerHTML = d++;
-messagePM004.innerHTML = "<button class=buttons002 onclick=next001()>Siguiente</button>";
+messagePM004.innerHTML = "<button class=buttons002 onclick=nextPM001()>Siguiente</button>";
 }
 
-function q1i() {
+function qPM1i() {
 messagePM003.innerHTML = "Incorrecto";
 messagePM002.innerHTML = "";
-messagePM004.innerHTML = "<button class=buttons002 onclick=next001()>Siguiente</button>";
+messagePM004.innerHTML = "<button class=buttons002 onclick=nextPM001()>Siguiente</button>";
 }
 
-function next001() {
+function nextPM001() {
 if (c == "2") {
     messagePM001.innerHTML = questionPM001[1];
     messagePM002.innerHTML = optionsPM002;
